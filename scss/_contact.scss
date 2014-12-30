@@ -1,0 +1,37 @@
+/*----------------Contact page------------------*/
+
+.contact-page-hl {
+	font-family: $headline-font-stack;
+	font-size:3rem;
+}
+
+.contact-form-label {
+	font-family: $body-font-stack;
+	font-size:1rem;
+	font-weight:300;
+}
+
+.submit {
+	clear:both;
+	font-family: $body-font-stack;
+}
+
+input[type="submit"] {
+	padding:10px;
+	font-family: $body-font-stack;
+	display:block;
+	clear:both;
+}
+
+.contact-form {
+	max-width:100%;
+}
+
+.message {
+	max-width:100%;
+}
+
+
+.submit {
+	margin-top:1rem;
+}

@@ -1,0 +1,96 @@
+/*---------------------SINGLE POST PAGE-------------------------*/
+
+.entry-title-single {
+	font-size:3rem;
+	padding:0;
+	margin-bottom:0;
+	font-family: $headline-font-stack;
+}
+
+.post-navigation {
+	display:none;
+}
+
+.single-container {
+	max-width:1080px;
+	margin:0px auto;
+}
+
+
+@media screen and (max-width:450px) {
+	.entry-title-single {
+		font-size:2rem;
+		}
+}
+
+
+.author.vcard, .meta-sep, .meta-prep-author {
+	display:none;
+}
+
+.comments-link {
+	display:none; /* hiding the comments and edit links at the bottom of the posts*/
+}
+
+.edit-link {
+	display:none; /* hiding the comments and edit links at the bottom of the posts*/
+}
+
+.entry-utility-prep {
+	font-size:.7rem;
+	color:#666;
+}
+
+.cat-links a {
+	font-size:.7rem;
+}
+
+a.more-link {
+	font-size:.65rem;
+}
+
+
+
+/*-------------making images in posts responsive--------------*/
+
+a img {
+max-width: 100%;
+}
+
+.entry-content img,
+.comment-content img,
+.widget img {
+    max-width:100%; /* Fluid images for posts, comments, and widgets */
+}
+
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.size-full {
+    max-width: 100%;
+    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+}
+
+#attachment-80 {
+	max-width:100%;
+	margin-top:2rem;
+}
+
+.wp-caption-text {
+	text-align:center;
+	color:#666;
+	font-size:.8rem;
+	margin-top:.5rem;
+}
+
+[id^="attachment"] {
+	max-width:100% !important;
+	margin-top:2rem;
+	height:auto;
+}
+
+figure {
+	margin:0 !important;  /*overiding WP's margins for the image container*/
+} 

@@ -1,0 +1,82 @@
+/*------------------HEADER-----------------------------------------------*/
+
+#masthead {
+
+}
+#click-menu {
+	position: fixed ;
+}
+#responsive-menu, #responsive-menu-title {
+	font-family: $body-font-stack;
+	font-weight: 300;
+}
+
+.site-header {
+	position: fixed;
+	top: 0;
+	opacity: .9;
+	width: 100%;
+	z-index: 100;
+	background-color:#ededed;
+}
+
+.header-main {
+	margin-top:10px;
+}
+
+.logo {
+	float:left;
+	margin: 0px 15px 15px 15px;
+}
+
+h1.site-title {
+	display:inline-block;
+	margin:0px;
+	margin-top:5px;
+	text-transform:uppercase;
+	font-size:.8rem;
+	font-size:1rem;
+	font-weight:300;
+	letter-spacing:.2rem;
+}
+
+
+
+@media screen and (max-width:800px) { /*hiding navigation for our responsive menu.*/
+	.primary-navigation {
+		display:none;
+	}
+}
+
+
+@media screen and (min-width:800px) {
+	
+	.header-main { 
+		max-width:1080px;  /* so our header doesn't stretch into infinity on larger screens*/
+		margin:0px auto;
+		padding-top:1rem;
+	}
+	
+	
+	.primary-navigation {
+		float:right;
+	}
+
+	.nav-menu li {
+		display:inline;
+		padding-left:2rem;
+		text-transform:uppercase;
+		font-size:.8rem;
+		font-weight:300;
+	}
+	
+	.logo {
+		margin-left:0px;
+	}
+
+	.branding {
+		margin-left:6.25%; /* 67.5px*/
+		margin-right:6.25%;
+	}
+	
+}

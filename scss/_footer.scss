@@ -1,0 +1,25 @@
+/*---------- Footer--------------------*/
+
+
+#footer {
+	clear:both;
+	text-align:center;
+	padding-bottom:.5rem;
+	padding-top:1rem;
+	font-size:.5rem;
+	display: none;
+}
+
+#footer a {
+	color:#838080;
+}
+
+#site-generator {
+	display:none;
+}
+
+@media screen and (max-width:800px) {
+	#footer {
+		background:#ededed;
+	}
+}

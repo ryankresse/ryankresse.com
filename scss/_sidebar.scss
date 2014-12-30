@@ -1,0 +1,86 @@
+/*---------- SIDEBAR--------------------*/
+
+/*these first set of sidebar styles apply for screens less than 800px wide*/
+
+#secondary {
+	width:100%;
+	margin:0;
+	background:#ededed;
+}
+.widget li {
+	font-size: .9rem;
+}
+
+.primary-sidebar {
+	margin:0px auto;
+	width:92%;
+	margin-top: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.widget-title {
+	border-bottom:1px solid #ccc;
+	font-size: 1.2rem;
+}
+
+.widget_categories ul {
+	margin-bottom:0px;
+}
+
+ul.xoxo {
+	padding:0px;
+	text-align:center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom:0;
+}
+
+h3.widget-title {
+	color: #ccc;
+	display:inline-block;
+	border-bottom:1px solid #ccc;
+	margin-bottom:.8rem;
+}
+
+#recent-posts-2 ul, 
+#archives-2 ul, 
+#categories-2 ul {
+	padding:0;
+}
+
+ul.xoxo a {
+	color:#9C9999;
+	font-size:.8rem;
+}
+
+ul.xoxo a:hover {
+	text-decoration:underline;
+}
+
+
+
+@media screen and (min-width:800px) {
+	
+	.primary-sidebar {
+		margin:0 6.25% 0 0;
+		width:25%;
+		float:right;
+		clear:none;
+	}
+	
+	.widget-title {
+		border-bottom:1px solid #ccc;
+	}
+}
+
+
+/*@media screen and (max-width:450px) {
+	.widget-title {
+		font-size:.8rem;
+	}
+	
+	.widget li {
+		font-size:.6rem;
+	}
+}*/

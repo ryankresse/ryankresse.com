@@ -1,0 +1,139 @@
+/*
+ Theme Name:   Twenty Fourteen Child
+ Theme URI:    ryankresse.com
+ Description:  Twenty Fourteen Child Theme
+ Author:       Ryan Kresse
+ Author URI:   ryankresse.com
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Text Domain:  twenty-fourteen-child
+*/
+
+
+@import 'reset';
+
+@import 'variables';
+
+@import 'header';
+
+@import 'front-page';
+
+@import 'blog';
+
+@import 'single-post';
+
+@import 'sidebar';
+
+@import 'footer';
+
+@import 'contact';
+
+
+/*---------------base styles for the site-------------------------------*/
+
+body {
+	margin:0;
+	font:10px $body-font-stack;
+}
+
+#page {
+	margin-top:0;
+	width:100%;
+}
+
+a {
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+	color:#c84f4f;
+}
+
+p {
+	margin-top:auto;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,821 @@
+/*
+ Theme Name:   Twenty Fourteen Child
+ Theme URI:    ryankresse.com
+ Description:  Twenty Fourteen Child Theme
+ Author:       Ryan Kresse
+ Author URI:   ryankresse.com
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+*/
+
+
+
+
+/ =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- /
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/ tables still need 'cellspacing="0"' in the markup /
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+a {
+	text-decoration:none;
+	color:black;
+	
+}
+
+.clear {
+	clear:both;
+}
+h1 {
+	margin:0;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+
+
+
+
+
+/*---------------base styles for the site-------------------------------*/
+
+body {
+	margin:0;
+	font:10px 'Open Sans', sans-serif;
+}
+
+#page {
+	margin-top:0;
+	width:100%;
+}
+
+a {
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+	color:#c84f4f;
+}
+
+
+
+/*------------------HEADER-----------------------------------------------*/
+
+.site-header {
+	margin-top:0;
+	background-color:#ededed;
+}
+
+.header-main {
+	margin-top:10px;
+}
+
+.logo {
+	float:left;
+	margin: 0px 15px 15px 15px;
+}
+
+h1.site-title {
+	display:inline-block;
+	margin:0px;
+	margin-top:5px;
+	text-transform:uppercase;
+	font-size:.8rem;
+	font-size:1rem;
+	font-weight:300;
+	letter-spacing:.2rem;
+}
+
+
+
+@media screen and (max-width:800px) { /*hiding navigation for our responsive menu.*/
+	.primary-navigation {
+		display:none;
+	}
+}
+
+
+@media screen and (min-width:800px) {
+	
+	.header-main { 
+		max-width:1080px;  /* so our header doesn't stretch into infinity on larger screens*/
+		margin:0px auto;
+		padding-top:1rem;
+	}
+	
+	
+	.primary-navigation {
+		float:right;
+	}
+
+	.nav-menu li {
+		display:inline;
+		padding-left:2rem;
+		text-transform:uppercase;
+		font-size:.8rem;
+		font-weight:300;
+	}
+	
+	.logo {
+		margin-left:0px;
+	}
+
+	.branding {
+		margin-left:6.25%; /* 67.5px*/
+		margin-right:6.25%;
+		padding-top:1rem;
+		padding-bottom:1rem;
+	}
+	
+}
+
+
+
+
+
+/*--------------------FRONT PAGE--------------------------*/
+
+
+#main {
+	margin-top:0px;
+	background-color:white;
+} 
+	
+.front-page-section-wrapper {
+	width:100%;
+	margin:0px auto;
+	padding-top:11rem;
+	padding-bottom:11rem;
+}
+	
+.front-page-section-container h1 {
+	margin:0px auto;
+	border-bottom: 1px solid #ccc;
+	text-align:center;
+	font-size:4rem;
+	font-family: 'Oswald', sans-serif;
+}
+	
+.front-page-section-container {
+	width:60%;
+	max-width:607px;
+	margin:0px auto;
+	text-align:justify;
+	font-size:1.2rem;
+	font-weight:300;
+}
+	
+.contact-wrapper {
+	background:#8A8A8A;
+}
+
+.contact-wrapper ul {
+	margin:0;
+	padding:0;
+}
+	
+.contact-wrapper li {
+	padding-bottom:20px;
+	display:block;
+	width:16%;
+	margin-right:13%;
+	float:left;
+	margin-top:2rem;
+}
+	
+.contact-wrapper li:first-of-type {
+	margin-left:13%;
+}
+	
+.contact-wrapper img {
+	width:100%;
+}
+	
+.contact-wrapper li:last-of-type {
+	float:left;
+}
+
+.contact-wrapper a {
+	opacity:.6;
+}
+
+.contact-wrapper a:hover {
+	opacity:1;
+}
+	
+.post {
+	margin-top:1rem;
+}	
+
+.entry {
+	clear:both;
+	text-align:justify;
+}
+
+.front-page-blog-post-title {
+	float:left;
+	margin-bottom:.4rem;
+	margin-top:0rem;
+	font-size:1.3rem;
+	font-style:italic;
+}
+	
+	
+@media (max-width:780px) {
+	.front-page-section-container {
+		width:80%;
+		margin:0px auto;
+		font-size:1.2rem;
+	}
+}
+
+
+@media (max-width:585px) {
+	.front-page-section-container {
+		width:90%;
+		margin:0px auto;
+		font-size:1.2rem;
+	}
+	
+	.front-page-section-container h1 {
+		font-size:3.5rem;
+	}
+}
+
+@media (max-width:450px) {
+	
+	.front-page-section-wrapper {
+		padding-bottom:5.5rem;
+		padding-top:5.5rem;
+	}
+	
+	.front-page-section-container {
+		width:90%;
+		margin:0px auto;
+		font-size:.9rem;
+		font-weight:300;
+	}
+
+	.front-page-section-container h1 {
+		font-size:1.6rem;
+		padding:1rem 0 1rem 0;
+		margin:0px auto;
+	}
+
+	.contact-wrapper ul {
+		padding-left:0;
+	}
+
+	.contact-wrapper li {
+		padding-bottom:20px;
+		width:25%;
+		display:block;
+		margin-right:12.5%;
+	}
+	
+	.contact-wrapper img {
+		width:100%;
+	}
+
+	.contact-wrapper li:first-of-type {
+		margin-left:0;
+	}
+
+	.contact-left, .contact-middle {
+		float:left;
+	}
+
+
+	.contact-wrapper li:last-of-type {
+		float:right;
+		margin-right:0;
+	}
+
+	.post h3 {
+		margin:0px;
+	}
+
+	.front-page-blog-post-title {
+		font-size:.9rem;
+		font-weight:bold;
+	}
+
+	.more-link {
+		display:block;
+	}
+
+	.front-page-blog-snippet-container p {
+		font-size:.9rem;
+	}
+
+}
+
+
+
+
+
+/*---------------------BLOG PAGE-----------------------*/
+
+.main-content {
+	max-width:1080px;
+	margin: 2rem auto 0 auto;
+}
+
+.site-content {
+	margin:0px auto;
+	width:92%;
+}
+
+.entry-title {
+	font-size:2.3rem;
+	padding:0;
+	margin-bottom:0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.entry-content ul, .entry ul {
+	list-style-type: disc;
+}
+
+
+.site-description {
+	display:none;
+}
+
+.content-area {
+	margin-top:2rem;
+}
+
+.widget_recent_entries {
+	display:none;
+}
+
+.archive-header {
+	margin-bottom:1rem;
+}
+
+.page-header {
+	margin-bottom:1rem;
+}
+
+.page-title {
+	text-transform:uppercase;
+	font-size:.8rem;
+}
+
+.archive-title {
+	text-transform:uppercase;
+	font-size:.8rem;
+}
+
+
+
+@media screen and (max-width:450px) {
+	
+	.site-content {
+	width:90%;
+	}
+
+	.entry-content p, .entry-content li  {
+		font-size: .9rem;
+		line-height: 1.5;
+		font-weight:300;
+	}	
+
+	.entry-title {
+	font-size:2rem;
+	}
+}
+
+
+@media screen and (min-width:450px) and (max-width:650px) {
+	
+	.entry-content p, .entry-content li {
+		font-size: 1.1rem;
+		line-height: 1.5;
+		font-weight:300;
+	}	
+}
+
+@media screen and (min-width:650px) and (max-width:850px) {
+	
+	.entry-content p, .entry-content li {
+		font-size: 1.1rem;
+		line-height: 1.5;
+		font-weight:300;
+	}	
+
+}
+
+
+@media screen and (min-width:800px) {
+	
+	.main-content {
+		margin-top:0;
+	}
+	
+	.site-content {
+	margin-left:6.25%;
+	margin-right:6.25%;
+	width: 56.25%;
+	float:left;
+	
+	}
+}
+
+
+@media screen and (min-width:850px) and (max-width:1000px) {
+	
+	.entry-content p, .entry-content li {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	font-weight:300;
+	}	
+}
+
+
+
+@media screen and (min-width:1000px) {
+
+	.entry-content p, .entry-content li {
+	font-size: 1.1rem;
+	line-height: 1.5;
+	font-weight:300;
+	}	
+
+}
+
+/*---------------------SINGLE POST PAGE-------------------------*/
+
+.entry-title-single {
+	font-size:3rem;
+	padding:0;
+	margin-bottom:0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.post-navigation {
+	display:none;
+}
+
+.single-container {
+	max-width:1080px;
+	margin:0px auto;
+}
+
+
+@media screen and (max-width:450px) {
+	.entry-title-single {
+		font-size:2rem;
+		}
+}
+
+
+.author.vcard, .meta-sep, .meta-prep-author {
+	display:none;
+}
+
+.comments-link {
+	display:none; /* hiding the comments and edit links at the bottom of the posts*/
+}
+
+.edit-link {
+	display:none; /* hiding the comments and edit links at the bottom of the posts*/
+}
+
+.entry-utility-prep {
+	font-size:.7rem;
+	color:#666;
+}
+
+.cat-links a {
+	font-size:.7rem;
+}
+
+a.more-link {
+	font-size:.65rem;
+}
+
+
+
+/*-------------making images in posts responsive--------------*/
+
+a img {
+max-width: 100%;
+}
+
+.entry-content img,
+.comment-content img,
+.widget img {
+    max-width:100%; /* Fluid images for posts, comments, and widgets */
+}
+
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+img.size-full {
+    max-width: 100%;
+    width: auto; /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
+}
+
+#attachment-80 {
+	max-width:100%;
+	margin-top:2rem;
+}
+
+.wp-caption-text {
+	text-align:center;
+	color:#666;
+	font-size:.8rem;
+	margin-top:.5rem;
+}
+
+[id^="attachment"] {
+	max-width:100% !important;
+	margin-top:2rem;
+	height:auto;
+}
+
+figure {
+	margin:0 !important;  /*overiding WP's margins for the image container*/
+} 
+
+
+
+/*---------- SIDEBAR--------------------*/
+
+/*these first set of sidebar styles apply for screens less than 800px wide*/
+
+#secondary {
+	width:100%;
+	margin:0;
+	background:#ededed;
+}
+
+
+.primary-sidebar {
+	margin:0px auto;
+	width:92%;
+	margin-top: 2rem;
+	padding-top: 1rem;
+}
+
+.widget-title {
+	border-bottom:1px solid #ccc;
+	font-size:1.2rem;
+}
+
+.widget_categories ul {
+	margin-bottom:0;
+}
+
+ul.xoxo {
+	padding:0px;
+	text-align:center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-bottom:0;
+}
+
+h3.widget-title {
+	color: #ccc;
+	display:inline-block;
+	border-bottom:1px solid #ccc;
+	margin-bottom:.8rem;
+}
+
+#recent-posts-2 ul, 
+#archives-2 ul, 
+#categories-2 ul {
+	padding:0;
+}
+
+ul.xoxo a {
+	color:#9C9999;
+	font-size:.8rem;
+}
+
+ul.xoxo a:hover {
+	text-decoration:underline;
+}
+
+
+
+@media screen and (min-width:800px) {
+	
+	.primary-sidebar {
+		margin:0 6.25% 0 0;
+		width:25%;
+		float:right;
+		clear:none;
+	}
+	
+	.widget-title {
+		border-bottom:1px solid #ccc;
+		font-size:1rem;
+	}
+}
+
+
+@media screen and (max-width:450px) {
+	.widget-title {
+		font-size:.8rem;
+	}
+	
+	.widget li {
+		font-size:.6rem;
+	}
+}
+
+
+/*---------- Footer--------------------*/
+
+
+#footer {
+	clear:both;
+	text-align:center;
+	padding-bottom:.5rem;
+	padding-top:1rem;
+	font-size:.5rem;
+}
+
+#footer a {
+	color:#838080;
+}
+
+#site-generator {
+	display:none;
+}
+
+@media screen and (max-width:800px) {
+	#footer {
+		background:#ededed;
+	}
+}
+
+
+
+
+/*----------------Contact page------------------*/
+
+.contact-page-hl {
+	font-family: 'Oswald', sans-serif;
+	font-size:3rem;
+}
+
+.contact-form-label {
+	font-family: 'Open Sans', sans-serif;
+	font-size:1rem;
+	font-weight:300;
+}
+
+.submit {
+	clear:both;
+	font-family:'Open Sans', sans-serif;
+}
+
+input[type="submit"] {
+	padding:10px;
+	font-family:'Open Sans', sans-serif;
+	display:block;
+	clear:both;
+}
+
+.contact-form {
+	max-width:100%;
+}
+
+.message {
+	max-width:100%;
+}
+
+
+.submit {
+	margin-top:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

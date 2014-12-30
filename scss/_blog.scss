@@ -1,0 +1,144 @@
+/*---------------------BLOG PAGE-----------------------*/
+
+.main-content {
+	max-width:1080px;
+	margin: 0 auto 0 auto;
+}
+.content-area {
+	margin-top: 6rem;
+}
+.site-content {
+	margin:0px auto;
+	width:92%;
+}
+
+.entry-title {
+	font-size:2.3rem;
+	padding:0;
+	margin-bottom:0;
+	font-family: $headline-font-stack;
+}
+
+.entry-content ul, .entry ul {
+	list-style-type: disc;
+	margin-top:.5rem;
+}
+
+.entry-content a {
+	text-decoration:underline;
+}
+
+
+.site-description {
+	display:none;
+}
+
+.widget_recent_entries {
+	display:none;
+}
+
+.archive-header {
+	margin-bottom:1rem;
+}
+
+.page-header {
+	margin-bottom:1rem;
+}
+
+.page-title {
+	text-transform:uppercase;
+	font-size:.8rem;
+}
+
+.archive-title {
+	text-transform:uppercase;
+	font-size:.8rem;
+}
+
+.cat-links {
+	display:none;
+}
+
+.entry-meta {
+	margin-bottom:1rem;
+}
+
+blockquote {
+	quotes: none;
+	font-style: italic;
+	/* background: #f9f9f9; */
+	border-left: 3px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.2em 10px;
+}
+
+@media screen and (max-width:450px) {
+	
+	.site-content {
+	 width:90%;
+	}
+
+	.entry-content p, .entry-content li  {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		font-weight:300;
+	}	
+
+	.entry-title {
+	  font-size:2rem;
+	}
+}
+
+
+@media screen and (min-width:450px) and (max-width:650px) {
+	
+	.entry-content p, .entry-content li {
+		font-size: 1.1rem;
+		line-height: 1.5;
+		font-weight:300;
+	}	
+}
+
+@media screen and (min-width:650px) and (max-width:850px) {
+	
+	.entry-content p, .entry-content li {
+		font-size: 1.1rem;
+		line-height: 1.5;
+		font-weight:300;
+	}	
+
+}
+
+
+@media screen and (min-width:800px) {
+	
+	.site-content {
+		margin-left:6.25%;
+		margin-right:6.25%;
+		width: 56.25%;
+		float:left;
+	
+	}
+}
+
+
+@media screen and (min-width:850px) and (max-width:1000px) {
+	
+	.entry-content p, .entry-content li {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	font-weight:300;
+	}	
+}
+
+
+
+@media screen and (min-width:1000px) {
+
+	.entry-content p, .entry-content li {
+	font-size: 1.1rem;
+	line-height: 1.5;
+	font-weight:300;
+	}	
+
+}
