@@ -8,7 +8,6 @@
  Version:      1.0.0
  Text Domain:  twenty-fourteen-child
 */
-/* line 9, scss/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,62 +21,41 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   border: 0;
   margin: 0;
   padding: 0;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-/* line 16, scss/_reset.scss */
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
-/* line 19, scss/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
-/* line 23, scss/_reset.scss */
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 26, scss/_reset.scss */
 blockquote {
-  quotes: none;
-}
+  quotes: none; }
 
-/* line 29, scss/_reset.scss */
 blockquote:before, blockquote:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
-/* line 33, scss/_reset.scss */
 del {
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
-/* line 37, scss/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-/* line 43, scss/_reset.scss */
 a {
   text-decoration: none;
-  color: black;
-}
+  color: black; }
 
-/* line 49, scss/_reset.scss */
 .clear {
-  clear: both;
-}
+  clear: both; }
 
-/* line 52, scss/_reset.scss */
 h1 {
-  margin: 0;
-}
+  margin: 0; }
 
 /**
  * For modern browsers
@@ -88,63 +66,46 @@ h1 {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 65, scss/_reset.scss */
 .cf:before,
 .cf:after {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
-/* line 70, scss/_reset.scss */
 .cf:after {
-  clear: both;
-}
+  clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 78, scss/_reset.scss */
 .cf {
-  *zoom: 1;
-}
+  *zoom: 1; }
 
 /*------------------HEADER-----------------------------------------------*/
-/* line 6, scss/_header.scss */
 #click-menu {
-  position: fixed;
-}
+  position: fixed; }
 
-/* line 9, scss/_header.scss */
 #responsive-menu, #responsive-menu-title {
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 14, scss/_header.scss */
 .site-header {
   position: fixed;
   top: 0;
   opacity: .9;
   width: 100%;
   z-index: 100;
-  background-color: #ededed;
-}
+  background-color: #ededed; }
 
-/* line 23, scss/_header.scss */
 .header-main {
-  margin-top: 10px;
-}
+  margin-top: 10px; }
 
-/* line 27, scss/_header.scss */
 .logo {
   float: left;
-  margin: 0px 15px 15px 15px;
-}
+  margin: 0px 15px 15px 15px; }
 
-/* line 32, scss/_header.scss */
 h1.site-title {
   display: inline-block;
   margin: 0px;
@@ -153,59 +114,41 @@ h1.site-title {
   font-size: .8rem;
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: .2rem;
-}
+  letter-spacing: .2rem; }
 
 @media screen and (max-width: 800px) {
   /*hiding navigation for our responsive menu.*/
-  /* line 46, scss/_header.scss */
   .primary-navigation {
-    display: none;
-  }
-}
+    display: none; } }
 @media screen and (min-width: 800px) {
-  /* line 54, scss/_header.scss */
   .header-main {
     max-width: 1080px;
     /* so our header doesn't stretch into infinity on larger screens*/
     margin: 0px auto;
-    padding-top: 1rem;
-  }
+    padding-top: 1rem; }
 
-  /* line 61, scss/_header.scss */
   .primary-navigation {
-    float: right;
-  }
+    float: right; }
 
-  /* line 65, scss/_header.scss */
   .nav-menu li {
     display: inline;
     padding-left: 2rem;
     text-transform: uppercase;
     font-size: .8rem;
-    font-weight: 300;
-  }
+    font-weight: 300; }
 
-  /* line 73, scss/_header.scss */
   .logo {
-    margin-left: 0px;
-  }
+    margin-left: 0px; }
 
-  /* line 77, scss/_header.scss */
   .branding {
     margin-left: 6.25%;
     /* 67.5px*/
-    margin-right: 6.25%;
-  }
-}
+    margin-right: 6.25%; } }
 /*--------------------FRONT PAGE--------------------------*/
-/* line 4, scss/_front-page.scss */
 #main {
   margin-top: 0px;
-  background-color: white;
-}
+  background-color: white; }
 
-/* line 10, scss/_front-page.scss */
 .intro-wrapper,
 .contact-wrapper,
 .blog-wrapper {
@@ -213,21 +156,15 @@ h1.site-title {
   height: 600px;
   background-repeat: no-repeat center center;
   background-size: cover;
-  position: relative;
-}
+  position: relative; }
 
-/* line 18, scss/_front-page.scss */
 .intro-wrapper,
 .blog-wrapper {
-  background: #fff;
-}
+  background: #fff; }
 
-/* line 21, scss/_front-page.scss */
 .contact-wrapper {
-  background: #ccc;
-}
+  background: #ccc; }
 
-/* line 26, scss/_front-page.scss */
 .intro-container,
 .contact-container,
 .blog-container {
@@ -237,14 +174,13 @@ h1.site-title {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   text-align: justify;
   background: transparent;
   font-size: 1.2rem;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 41, scss/_front-page.scss */
 .intro-container h1,
 .contact-container h1,
 .blog-container h1 {
@@ -253,97 +189,65 @@ h1.site-title {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 4rem;
-  font-family: "Oswald", sans-serif;
-}
+  font-family: "Oswald", sans-serif; }
 
-/* line 49, scss/_front-page.scss */
 .contact-wrapper ul {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 53, scss/_front-page.scss */
 .contact-wrapper li {
   padding-bottom: 20px;
   width: 25%;
   display: block;
   margin-right: 12.5%;
-  float: left;
-}
+  float: left; }
 
-/* line 60, scss/_front-page.scss */
 .contact-wrapper li:first-of-type {
-  margin-left: 0;
-}
+  margin-left: 0; }
 
-/* line 63, scss/_front-page.scss */
 .contact-wrapper img {
-  width: 100%;
-}
+  width: 100%; }
 
-/* line 66, scss/_front-page.scss */
 .contact-wrapper li:last-of-type {
   float: right;
-  margin-right: 0;
-}
+  margin-right: 0; }
 
-/* line 70, scss/_front-page.scss */
 .contact-wrapper a {
-  opacity: .6;
-}
+  opacity: .6; }
 
-/* line 73, scss/_front-page.scss */
 .contact-wrapper a:hover {
-  opacity: 1;
-}
+  opacity: 1; }
 
-/* line 76, scss/_front-page.scss */
 .contact-container h1 {
-  border-bottom: 1px solid #ededed;
-}
+  border-bottom: 1px solid #ededed; }
 
-/* line 79, scss/_front-page.scss */
 .post {
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 
-/* line 82, scss/_front-page.scss */
 .entry {
   clear: both;
-  text-align: justify;
-}
+  text-align: justify; }
 
-/* line 86, scss/_front-page.scss */
 .entry a {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
-/* line 89, scss/_front-page.scss */
 a.more-link {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-/* line 92, scss/_front-page.scss */
 .front-page-blog-post-title {
   float: left;
   margin-bottom: .4rem;
   margin-top: 0rem;
   font-size: 1.3rem;
-  font-style: italic;
-}
+  font-style: italic; }
 
-/* line 99, scss/_front-page.scss */
 .more-link {
-  display: block;
-}
+  display: block; }
 
-/* line 102, scss/_front-page.scss */
 .divider {
-  display: none;
-}
+  display: none; }
 
 /* ---styles our animation will animate from-----*/
-/* line 115, scss/_front-page.scss */
 .intro-heading,
 .intro-copy,
 .contact-header,
@@ -354,54 +258,37 @@ a.more-link {
 .twitter-link {
   opacity: 0;
   position: relative;
-  bottom: 50px;
-}
+  bottom: 50px; }
 
 @media screen and (min-width: 450px) {
-  /* line 122, scss/_front-page.scss */
   .contact-wrapper li {
     padding-bottom: 20px;
     display: block;
     width: 16%;
     margin-right: 13%;
-    margin-top: 2rem;
-  }
+    margin-top: 2rem; }
 
-  /* line 129, scss/_front-page.scss */
   .contact-wrapper li:first-of-type {
-    margin-left: 13%;
-  }
+    margin-left: 13%; }
 
-  /* line 132, scss/_front-page.scss */
   .contact-wrapper li:last-of-type {
-    float: left;
-  }
-}
+    float: left; } }
 @media screen and (min-width: 585px) {
-  /* line 140, scss/_front-page.scss */
   .intro-wrapper,
   .contact-wrapper,
   .blog-wrapper {
     width: 100%;
-    height: 1000px;
-  }
+    height: 1000px; }
 
-  /* line 144, scss/_front-page.scss */
   .intro-wrapper {
-    background: url(../twentyfourteen/images/computer.jpg);
-  }
+    background: url(../twentyfourteen/images/computer.jpg); }
 
-  /* line 147, scss/_front-page.scss */
   .contact-wrapper {
-    background: url(../twentyfourteen/images/contact.jpg);
-  }
+    background: url(../twentyfourteen/images/contact.jpg); }
 
-  /* line 150, scss/_front-page.scss */
   .blog-wrapper {
-    background: url(../twentyfourteen/images/typewriter.jpg);
-  }
+    background: url(../twentyfourteen/images/typewriter.jpg); }
 
-  /* line 155, scss/_front-page.scss */
   .intro-container,
   .contact-container,
   .blog-container {
@@ -412,362 +299,244 @@ a.more-link {
     opacity: .85;
     max-width: 500px;
     position: absolute;
-    padding: 60px;
-  }
+    padding: 60px; }
 
-  /* line 165, scss/_front-page.scss */
   .divider {
     display: block;
     width: 100%;
     height: 150px;
-    background: #ccc;
-  }
-}
+    background: #ccc; } }
 /*---------------------BLOG PAGE-----------------------*/
-/* line 3, scss/_blog.scss */
 .main-content {
   max-width: 1080px;
-  margin: 0 auto 0 auto;
-}
+  margin: 0 auto 0 auto; }
 
-/* line 7, scss/_blog.scss */
 .content-area {
-  margin-top: 6rem;
-}
+  margin-top: 6rem; }
 
-/* line 10, scss/_blog.scss */
 .site-content {
   margin: 0px auto;
-  width: 92%;
-}
+  width: 92%; }
 
-/* line 15, scss/_blog.scss */
 .entry-title {
   font-size: 2.3rem;
   padding: 0;
   margin-bottom: 0;
-  font-family: "Oswald", sans-serif;
-}
+  font-family: "Oswald", sans-serif; }
 
-/* line 22, scss/_blog.scss */
 .entry-content ul, .entry ul {
   list-style-type: disc;
-  margin-top: .5rem;
-}
+  margin-top: .5rem; }
 
-/* line 27, scss/_blog.scss */
 .entry-content a {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
-/* line 32, scss/_blog.scss */
 .site-description {
-  display: none;
-}
+  display: none; }
 
-/* line 36, scss/_blog.scss */
 .widget_recent_entries {
-  display: none;
-}
+  display: none; }
 
-/* line 40, scss/_blog.scss */
 .archive-header {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
-/* line 44, scss/_blog.scss */
 .page-header {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
-/* line 48, scss/_blog.scss */
 .page-title {
   text-transform: uppercase;
-  font-size: .8rem;
-}
+  font-size: .8rem; }
 
-/* line 53, scss/_blog.scss */
 .archive-title {
   text-transform: uppercase;
-  font-size: .8rem;
-}
+  font-size: .8rem; }
 
-/* line 58, scss/_blog.scss */
 .cat-links {
-  display: none;
-}
+  display: none; }
 
-/* line 62, scss/_blog.scss */
 .entry-meta {
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
-/* line 66, scss/_blog.scss */
 blockquote {
   quotes: none;
   font-style: italic;
   /* background: #f9f9f9; */
   border-left: 3px solid #ccc;
   margin: 1.5em 10px;
-  padding: 0.2em 10px;
-}
+  padding: 0.2em 10px; }
 
 @media screen and (max-width: 450px) {
-  /* line 77, scss/_blog.scss */
   .site-content {
-    width: 90%;
-  }
+    width: 90%; }
 
-  /* line 81, scss/_blog.scss */
   .entry-content p, .entry-content li {
     font-size: 1.2rem;
     line-height: 1.5;
-    font-weight: 300;
-  }
+    font-weight: 300; }
 
-  /* line 87, scss/_blog.scss */
   .entry-title {
-    font-size: 2rem;
-  }
-}
+    font-size: 2rem; } }
 @media screen and (min-width: 450px) and (max-width: 650px) {
-  /* line 95, scss/_blog.scss */
   .entry-content p, .entry-content li {
     font-size: 1.1rem;
     line-height: 1.5;
-    font-weight: 300;
-  }
-}
+    font-weight: 300; } }
 @media screen and (min-width: 650px) and (max-width: 850px) {
-  /* line 104, scss/_blog.scss */
   .entry-content p, .entry-content li {
     font-size: 1.1rem;
     line-height: 1.5;
-    font-weight: 300;
-  }
-}
+    font-weight: 300; } }
 @media screen and (min-width: 800px) {
-  /* line 115, scss/_blog.scss */
   .site-content {
     margin-left: 6.25%;
     margin-right: 6.25%;
     width: 56.25%;
-    float: left;
-  }
-}
+    float: left; } }
 @media screen and (min-width: 850px) and (max-width: 1000px) {
-  /* line 127, scss/_blog.scss */
   .entry-content p, .entry-content li {
     font-size: 1.2rem;
     line-height: 1.5;
-    font-weight: 300;
-  }
-}
+    font-weight: 300; } }
 @media screen and (min-width: 1000px) {
-  /* line 138, scss/_blog.scss */
   .entry-content p, .entry-content li {
     font-size: 1.1rem;
     line-height: 1.5;
-    font-weight: 300;
-  }
-}
+    font-weight: 300; } }
 /*---------------------SINGLE POST PAGE-------------------------*/
-/* line 3, scss/_single-post.scss */
 .entry-title-single {
   font-size: 3rem;
   padding: 0;
   margin-bottom: 0;
-  font-family: "Oswald", sans-serif;
-}
+  font-family: "Oswald", sans-serif; }
 
-/* line 10, scss/_single-post.scss */
 .post-navigation {
-  display: none;
-}
+  display: none; }
 
-/* line 14, scss/_single-post.scss */
 .single-container {
   max-width: 1080px;
-  margin: 0px auto;
-}
+  margin: 0px auto; }
 
 @media screen and (max-width: 450px) {
-  /* line 21, scss/_single-post.scss */
   .entry-title-single {
-    font-size: 2rem;
-  }
-}
-/* line 27, scss/_single-post.scss */
+    font-size: 2rem; } }
 .author.vcard, .meta-sep, .meta-prep-author {
-  display: none;
-}
+  display: none; }
 
-/* line 31, scss/_single-post.scss */
 .comments-link {
   display: none;
-  /* hiding the comments and edit links at the bottom of the posts*/
-}
+  /* hiding the comments and edit links at the bottom of the posts*/ }
 
-/* line 35, scss/_single-post.scss */
 .edit-link {
   display: none;
-  /* hiding the comments and edit links at the bottom of the posts*/
-}
+  /* hiding the comments and edit links at the bottom of the posts*/ }
 
-/* line 39, scss/_single-post.scss */
 .entry-utility-prep {
   font-size: .7rem;
-  color: #666;
-}
+  color: #666; }
 
-/* line 44, scss/_single-post.scss */
 .cat-links a {
-  font-size: .7rem;
-}
+  font-size: .7rem; }
 
-/* line 48, scss/_single-post.scss */
 a.more-link {
-  font-size: .65rem;
-}
+  font-size: .65rem; }
 
 /*-------------making images in posts responsive--------------*/
-/* line 56, scss/_single-post.scss */
 a img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* line 62, scss/_single-post.scss */
 .entry-content img,
 .comment-content img,
 .widget img {
   max-width: 100%;
-  /* Fluid images for posts, comments, and widgets */
-}
+  /* Fluid images for posts, comments, and widgets */ }
 
-/* line 67, scss/_single-post.scss */
 img[class*="align"],
 img[class*="wp-image-"] {
   height: auto;
-  /* Make sure images with WordPress-added height and width attributes are scaled correctly */
-}
+  /* Make sure images with WordPress-added height and width attributes are scaled correctly */ }
 
-/* line 71, scss/_single-post.scss */
 img.size-full {
   max-width: 100%;
   width: auto;
-  /* Prevent stretching of full-size images with height and >>width attributes in IE8 */
-}
+  /* Prevent stretching of full-size images with height and >>width attributes in IE8 */ }
 
-/* line 76, scss/_single-post.scss */
 #attachment-80 {
   max-width: 100%;
-  margin-top: 2rem;
-}
+  margin-top: 2rem; }
 
-/* line 81, scss/_single-post.scss */
 .wp-caption-text {
   text-align: center;
   color: #666;
   font-size: .8rem;
-  margin-top: .5rem;
-}
+  margin-top: .5rem; }
 
-/* line 88, scss/_single-post.scss */
 [id^="attachment"] {
   max-width: 100% !important;
   margin-top: 2rem;
-  height: auto;
-}
+  height: auto; }
 
-/* line 94, scss/_single-post.scss */
 figure {
   margin: 0 !important;
-  /*overiding WP's margins for the image container*/
-}
+  /*overiding WP's margins for the image container*/ }
 
 /*---------- SIDEBAR--------------------*/
 /*these first set of sidebar styles apply for screens less than 800px wide*/
-/* line 5, scss/_sidebar.scss */
 #secondary {
   width: 100%;
   margin: 0;
-  background: #ededed;
-}
+  background: #ededed; }
 
-/* line 10, scss/_sidebar.scss */
 .widget li {
-  font-size: .9rem;
-}
+  font-size: .9rem; }
 
-/* line 14, scss/_sidebar.scss */
 .primary-sidebar {
   margin: 0px auto;
   width: 92%;
   margin-top: 2rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+  padding-bottom: 1rem; }
 
-/* line 22, scss/_sidebar.scss */
 .widget-title {
   border-bottom: 1px solid #ccc;
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem; }
 
-/* line 27, scss/_sidebar.scss */
 .widget_categories ul {
-  margin-bottom: 0px;
-}
+  margin-bottom: 0px; }
 
-/* line 31, scss/_sidebar.scss */
 ul.xoxo {
   padding: 0px;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
-/* line 39, scss/_sidebar.scss */
 h3.widget-title {
   color: #ccc;
   display: inline-block;
   border-bottom: 1px solid #ccc;
-  margin-bottom: .8rem;
-}
+  margin-bottom: .8rem; }
 
-/* line 48, scss/_sidebar.scss */
 #recent-posts-2 ul,
 #archives-2 ul,
 #categories-2 ul {
-  padding: 0;
-}
+  padding: 0; }
 
-/* line 52, scss/_sidebar.scss */
 ul.xoxo a {
   color: #9C9999;
-  font-size: .8rem;
-}
+  font-size: .8rem; }
 
-/* line 57, scss/_sidebar.scss */
 ul.xoxo a:hover {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 @media screen and (min-width: 800px) {
-  /* line 65, scss/_sidebar.scss */
   .primary-sidebar {
     margin: 0 6.25% 0 0;
     width: 25%;
     float: right;
-    clear: none;
-  }
+    clear: none; }
 
-  /* line 72, scss/_sidebar.scss */
   .widget-title {
-    border-bottom: 1px solid #ccc;
-  }
-}
+    border-bottom: 1px solid #ccc; } }
 /*@media screen and (max-width:450px) {
 	.widget-title {
 		font-size:.8rem;
@@ -778,102 +547,66 @@ ul.xoxo a:hover {
 	}
 }*/
 /*---------- Footer--------------------*/
-/* line 4, scss/_footer.scss */
 #footer {
   clear: both;
   text-align: center;
   padding-bottom: .5rem;
   padding-top: 1rem;
   font-size: .5rem;
-  display: none;
-}
+  display: none; }
 
-/* line 13, scss/_footer.scss */
 #footer a {
-  color: #838080;
-}
+  color: #838080; }
 
-/* line 17, scss/_footer.scss */
 #site-generator {
-  display: none;
-}
+  display: none; }
 
 @media screen and (max-width: 800px) {
-  /* line 22, scss/_footer.scss */
   #footer {
-    background: #ededed;
-  }
-}
+    background: #ededed; } }
 /*----------------Contact page------------------*/
-/* line 3, scss/_contact.scss */
 .contact-page-hl {
   font-family: "Oswald", sans-serif;
-  font-size: 3rem;
-}
+  font-size: 3rem; }
 
-/* line 8, scss/_contact.scss */
 .contact-form-label {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 14, scss/_contact.scss */
 .submit {
   clear: both;
-  font-family: "Open Sans", sans-serif;
-}
+  font-family: "Open Sans", sans-serif; }
 
-/* line 19, scss/_contact.scss */
 input[type="submit"] {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
   display: block;
-  clear: both;
-}
+  clear: both; }
 
-/* line 26, scss/_contact.scss */
 .contact-form {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* line 30, scss/_contact.scss */
 .message {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* line 35, scss/_contact.scss */
 .submit {
-  margin-top: 1rem;
-}
+  margin-top: 1rem; }
 
 /*---------------base styles for the site-------------------------------*/
-/* line 34, scss/style.scss */
 body {
   margin: 0;
-  font: 10px "Open Sans", sans-serif;
-}
+  font: 10px "Open Sans", sans-serif; }
 
-/* line 39, scss/style.scss */
 #page {
   margin-top: 0;
-  width: 100%;
-}
+  width: 100%; }
 
-/* line 44, scss/style.scss */
 a {
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
+  transition: all 0.5s ease; }
 
-/* line 51, scss/style.scss */
 a:hover {
-  color: #c84f4f;
-}
+  color: #c84f4f; }
 
-/* line 55, scss/style.scss */
 p {
-  margin-top: auto;
-}
+  margin-top: auto; }
