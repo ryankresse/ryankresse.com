@@ -10,14 +10,16 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                   'style.css': 'scss/style.scss'
+                   'style.css': 'scss/style.scss',
+                   'portfolio.css': 'scss/portfolio/portfolio.scss'
                 }
             }
         },
         autoprefixer: {
             dist: {
                 files: {
-                    'style.css': 'style.css'  
+                    'style.css': 'style.css',
+                     'portfolio.css': 'portfolio.css'   
                 }
             }
         },
@@ -25,7 +27,9 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: [
-                    'scss/*.scss'
+                    'scss/*.scss',
+                    'scss/portfolio/*.scss'
+
 
                 ],
                 tasks: ['sass', 'autoprefixer']

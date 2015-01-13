@@ -1,4 +1,7 @@
 jQuery( document ).ready(function() {
+	
+//FRONT PAGE SCRIPT
+
 	var introHeading = document.querySelector('.intro-heading');
    	var introCopy = document.querySelector('.intro-copy');
    	var contactHeader = jQuery('.contact-header');
@@ -60,6 +63,9 @@ jQuery( document ).ready(function() {
 
 	TweenLite.to(introHeading, .6, {opacity:"1", bottom:"0px", delay: 1});
    	TweenLite.to(introCopy, .6, {opacity:"1", bottom:"0px", delay: 1.7});
+
+
+
 
 
 });

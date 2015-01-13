@@ -43,7 +43,6 @@
 	border-bottom: 1px solid #ccc;
 	margin-bottom:1rem;
 	text-align:center;
-	font-size:4rem;
 	font-family: $headline-font-stack;
 }
 .contact-wrapper ul {
@@ -131,6 +130,11 @@ a.more-link {
 	}
 	.contact-wrapper li:last-of-type {
 		float: left;
+	}
+	.intro-container h1,
+	.contact-container h1,
+	.blog-container h1 {
+		font-size: 4rem;
 	}
 }
 

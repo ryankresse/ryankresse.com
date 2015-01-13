@@ -1,0 +1,341 @@
+/*
+ Theme Name:   Twenty Fourteen Child
+ Theme URI:    ryankresse.com
+ Description:  Twenty Fourteen Child Theme
+ Author:       Ryan Kresse
+ Author URI:   ryankresse.com
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Text Domain:  twenty-fourteen-child
+*/
+/*--------scroll-------*/
+body, html {
+  margin: 0;
+  overflow: hidden;
+  transition: opacity 400ms; }
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d; }
+
+.onepage-wrapper .ops-section {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center; }
+
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block; }
+
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+.onepage-pagination li a.active:before {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px; }
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto; }
+
+.disabled-onepage-scroll .onepage-wrapper .ops-section {
+  position: relative !important;
+  top: auto !important; }
+
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%; }
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none; }
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit; }
+
+/*--------portfolio---------*/
+/* overriding site styles so that flexbox will work correctly on our project description*/
+p {
+  margin-top: 0; }
+
+#click-menu {
+  display: block !important; }
+
+/* we want our menu toggle button to be visible even on top of dark backgrounds */
+.click-menu-image {
+  background: #ccc;
+  padding: 5px;
+  border-radius: 2px; }
+
+.onepage-pagination {
+  top: 20px;
+  left: 20px;
+  background: #ccc;
+  border-radius: 2px; }
+
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* centering content within the viewport*/
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+section p a {
+  text-decoration: underline; }
+
+.page_container {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* at <900px, we stack our project image and copy*/
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/*---hiding the content sections after the first section, so that we can animate them to visible when we scroll to them*/
+.page_container2,
+.page_container3 {
+  opacity: 0;
+  bottom: 15px; }
+
+.page1 {
+  background: #ccc; }
+
+.page2 {
+  background: #1C1C1B;
+  color: #8A8988; }
+
+.page2 a {
+  color: #8A8988; }
+
+h1 {
+  margin-top: 0; }
+
+.project-description,
+.project-image-container {
+  text-align: center; }
+
+.project-description {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.project-image-container {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.device-image {
+  max-width: 60%; }
+
+/* hiding big images we're going to display at >900px  */
+.crave-big-image,
+.tweetstream-big-image {
+  display: none; }
+
+.project-title {
+  font-family: "Oswald", sans-serif;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-size: 3rem; }
+
+.black-border-bottom {
+  border-bottom: 1px solid #000; }
+
+.project-copy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300; }
+
+.page-indicator {
+  display: none;
+  /* not showing our page indicator circles on small screens*/ }
+
+@media screen and (min-width: 550px) {
+  .page-indicator {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    background: #ccc;
+    padding: 5px;
+    border-radius: 3px; }
+
+  .indicator-circle {
+    float: left;
+    min-height: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-right: 10px; }
+
+  .indicator-circle:last-child {
+    margin-right: 0; }
+
+  .first-indicator-circle {
+    background: #000; } }
+@media screen and (min-width: 500px) and (max-width: 699px) {
+  .page_container {
+    width: 80%;
+    padding: 0; }
+
+  .project-title {
+    font-size: 4rem; } }
+@media screen and (min-width: 700px) and (max-width: 899px) {
+  .page_container {
+    width: 60%; }
+
+  .device-image {
+    margin-bottom: 1rem; } }
+@media screen and (min-width: 900px) {
+  .small-device-image {
+    display: none; }
+
+  .page_container {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /* at >900px, we display our image and copy side by side */
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    /* by default, we align the content towards the right of the screen*/
+    width: 100%; }
+
+  .device-image {
+    max-width: 70%;
+    float: right; }
+
+  .project-description {
+    width: 40%;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    /* centering our copy vertically within our project description div*/
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .project-image-container {
+    width: 50%;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; }
+
+  .project-title {
+    font-size: 4rem; }
+
+  .project-copy {
+    font-size: 1.2rem; }
+
+  /* if we want our image to be on the left instead of the right, we add the following four classes*/
+  .align-image-left {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+  .image-floating-left {
+    float: left; }
+
+  .image-aligned-left {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+
+  .description-aligned-right {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+
+  /*we have slightly different widths for each of our devices images to make them their best*/
+  .tweetstream-big-image {
+    display: block;
+    max-width: 650px;
+    width: 90%; }
+
+  .crave-big-image {
+    display: block;
+    max-width: 550px;
+    width: 90%; } }
+/*---------------base styles for the site-------------------------------*/
+body {
+  margin: 0;
+  font: 10px "Open Sans", sans-serif; }
+
+#page {
+  margin-top: 0;
+  width: 100%; }
+
+a {
+  transition: all 0.5s ease; }
+
+a:hover {
+  color: #c84f4f; }

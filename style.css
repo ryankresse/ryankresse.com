@@ -188,7 +188,6 @@ h1.site-title {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
   text-align: center;
-  font-size: 4rem;
   font-family: "Oswald", sans-serif; }
 
 .contact-wrapper ul {
@@ -272,7 +271,12 @@ a.more-link {
     margin-left: 13%; }
 
   .contact-wrapper li:last-of-type {
-    float: left; } }
+    float: left; }
+
+  .intro-container h1,
+  .contact-container h1,
+  .blog-container h1 {
+    font-size: 4rem; } }
 @media screen and (min-width: 585px) {
   .intro-wrapper,
   .contact-wrapper,
