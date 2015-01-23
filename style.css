@@ -319,14 +319,19 @@ a.more-link {
   margin-top: 6rem; }
 
 .site-content {
-  margin: 0px auto;
-  width: 92%; }
+  width: 92%;
+  margin: 0px auto; }
 
 .entry-title {
-  font-size: 2.3rem;
+  font-size: 2rem;
   padding: 0;
   margin-bottom: 0;
   font-family: "Oswald", sans-serif; }
+
+.entry-content p, .entry-content li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 300; }
 
 .entry-content ul, .entry ul {
   list-style-type: disc;
@@ -335,10 +340,15 @@ a.more-link {
 .entry-content a {
   text-decoration: underline; }
 
-.site-description {
-  display: none; }
+.entry-content h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
-.widget_recent_entries {
+.site-description,
+.widget_recent_entries,
+.cat-links {
   display: none; }
 
 .archive-header {
@@ -355,9 +365,6 @@ a.more-link {
   text-transform: uppercase;
   font-size: .8rem; }
 
-.cat-links {
-  display: none; }
-
 .entry-meta {
   margin-bottom: 1rem; }
 
@@ -369,43 +376,24 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.2em 10px; }
 
-@media screen and (max-width: 450px) {
-  .site-content {
-    width: 90%; }
+/*--for displaying code in posts--*/
+pre {
+  font-size: 1.1rem;
+  max-width: 100%;
+  margin-bottom: 1em;
+  overflow-x: scroll;
+  background: #ededed;
+  padding: 5px !important; }
 
-  .entry-content p, .entry-content li {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 300; }
-
+@media screen and (min-width: 450px) {
   .entry-title {
-    font-size: 2rem; } }
-@media screen and (min-width: 450px) and (max-width: 650px) {
-  .entry-content p, .entry-content li {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    font-weight: 300; } }
-@media screen and (min-width: 650px) and (max-width: 850px) {
-  .entry-content p, .entry-content li {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    font-weight: 300; } }
+    font-size: 2.3rem; } }
 @media screen and (min-width: 800px) {
   .site-content {
     margin-left: 6.25%;
     margin-right: 6.25%;
     width: 56.25%;
     float: left; } }
-@media screen and (min-width: 850px) and (max-width: 1000px) {
-  .entry-content p, .entry-content li {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 300; } }
-@media screen and (min-width: 1000px) {
-  .entry-content p, .entry-content li {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    font-weight: 300; } }
 /*---------------------SINGLE POST PAGE-------------------------*/
 .entry-title-single {
   font-size: 3rem;
